@@ -1,17 +1,14 @@
 import { LOAD_JOKE } from '../actions/jokes';
+import { jokes } from '../../assets/jokes';
 
 const initialState = {
-  jokes: [],
+  jokes: Object.values(jokes),
 }
 
 const jokesReducer = (state = initialState, action) => {
   switch (action.type) {
-    case LOAD_JOKE:
-      return {
-        ...state
-      }
     default:
-      return state
+      return state;
   }
 }
 
