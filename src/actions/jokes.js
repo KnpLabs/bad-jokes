@@ -1,7 +1,3 @@
-export const LOAD_JOKE = 'LOAD_JOKE';
+import jokes from '../../assets/jokes';
 
-export function loadQuestion() {
-  return {
-    type: LOAD_JOKE,
-  }
-}
+export const LOAD_JOKE = 'LOAD_JOKE';
