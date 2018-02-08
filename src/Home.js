@@ -1,6 +1,5 @@
 import React from 'react';
 import { Text, View, StyleSheet, Button } from 'react-native';
-import { StackNavigator } from 'react-navigation';
 
 export const Home = ({navigation}) => (
   <View style={styles.container}>
