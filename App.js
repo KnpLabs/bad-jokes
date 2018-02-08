@@ -1,14 +1,10 @@
 import React from 'react';
 import { StackNavigator } from 'react-navigation';
-import { Prehome } from './src/Prehome';
 import { Home } from './src/Home';
 import { NewGame } from './src/NewGame';
 
 const RootStack = StackNavigator(
   {
-    Prehome: {
-      screen: Prehome
-    },
     Home: {
       screen: Home
     },
@@ -17,7 +13,7 @@ const RootStack = StackNavigator(
     }
   },
   {
-    initialRouteName: 'Prehome',
+    initialRouteName: 'Home',
     headerMode: 'none',
   }
 );
