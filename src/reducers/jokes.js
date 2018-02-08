@@ -1,7 +1,7 @@
-import { LOAD_JOKE } from '../actions/joke';
+import { LOAD_JOKE } from '../actions/jokes';
 
 const initialState = {
-  joke: {},
+  jokes: [],
 }
 
 const jokesReducer = (state = initialState, action) => {
