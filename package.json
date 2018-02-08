@@ -1,6 +1,11 @@
 {
   "name": "@knplabs/jokes-de-papa",
   "description": "A React Native toy project (Hackathon #7).",
-  "dependencies": {},
+  "dependencies": {
+    "react": "^16.2.0",
+    "react-native": "^0.53.0",
+    "react-native-cli": "^2.0.1",
+    "react-native-navigation": "^1.1.371"
+  },
   "devDependencies": {}
 }
