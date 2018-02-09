@@ -3,11 +3,6 @@
   "version": "0.1.0",
   "private": true,
   "author": "KnpLabs",
-  "devDependencies": {
-    "react-native-scripts": "1.11.1",
-    "jest-expo": "25.0.0",
-    "react-test-renderer": "16.2.0"
-  },
   "main": "./node_modules/react-native-scripts/build/bin/crna-entry.js",
   "scripts": {
     "start": "react-native-scripts start",
@@ -27,6 +22,13 @@
     "react-native-ui-kitten": "^3.0.0",
     "react-navigation": "^1.0.0",
     "react-redux": "^5.0.6",
+    "react-native-elements": "^0.19.0",
+    "react-native-ui-kitten": "^3.0.0",
     "tcomb-form-native": "^0.6.11"
+  },
+  "devDependencies": {
+    "react-native-scripts": "1.11.1",
+    "jest-expo": "25.0.0",
+    "react-test-renderer": "16.2.0"
   }
 }

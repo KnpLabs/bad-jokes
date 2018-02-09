@@ -59,7 +59,7 @@ class PlayerContainer extends React.Component {
 
         if (value) {
             this.props.editTeamsNames(value.firstTeam, value.secondTeam);
-            this.props.navigation.navigate('NewGame');
+            this.props.navigation.navigate('Game');
         }
     };
 

@@ -12,15 +12,6 @@
     "androidStatusBar": {
       "backgroundColor": "#ffffff"
     },
-    //"ios": {
-    //  "bundleIdentifier": "com.knplabs.dadjokes",
-    //  "buildNumber": "1.0.10",
-    //  "supportsTablet": true
-    //},
-    //"android": {
-    //  "package": "com.knplabs.dadjokes",
-    //  "versionCode": 16
-    //},
     "version": "0.1.0"
   }
 }

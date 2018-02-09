@@ -25,7 +25,7 @@ const initialState = {
   },
   jokesCount: 0,
   jokesIndex: 0,
-}
+};
 
 const gameReducer = (state = initialState, action) => {
   switch (action.type) {
@@ -63,6 +63,7 @@ const gameReducer = (state = initialState, action) => {
         ...state,
         jokesIndex: state.jokesIndex + 1,
       }
+
     default:
       return state
   }
