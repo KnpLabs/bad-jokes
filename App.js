@@ -5,6 +5,7 @@ import store from './src/store';
 import { Home } from './src/components/Home';
 import { Player } from './src/containers/Player';
 import { Game } from './src/containers/Game';
+import { Finish } from './src/containers/Finish';
 
 const RootStack = StackNavigator(
   {
@@ -16,6 +17,9 @@ const RootStack = StackNavigator(
     },
     Game: {
       screen: Game,
+    },
+    Finish: {
+      screen: Finish,
     }
   },
   {
