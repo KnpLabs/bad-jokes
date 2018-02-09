@@ -7,6 +7,6 @@ export const TeamBadge = (props) => (
   <View style={globalStyles.container}>
     <RkText rkType='xxlarge'>{props.team.name}</RkText>
     <RkText>Score&nbsp;: {props.team.score}</RkText>
-    <RkButton>+ 1</RkButton>
+    <RkButton onPress={props.onButtonPress}>+ 1</RkButton>
   </View>
 );

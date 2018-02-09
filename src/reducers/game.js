@@ -1,9 +1,11 @@
-import { EDIT_TEAMS_NAMES } from '../actions/game';
-import { NEW_GAME } from '../actions/game';
-import { NEXT_JOKE } from '../actions/game';
-import { END_GAME } from '../actions/game';
-import { FIRST_TEAM_SCORES } from '../actions/game';
-import { SECOND_TEAM_SCORES } from '../actions/game';
+import {
+  EDIT_TEAMS_NAMES,
+  NEW_GAME,
+  NEXT_JOKE,
+  END_GAME,
+  FIRST_TEAM_SCORES,
+  SECOND_TEAM_SCORES
+} from '../actions/game';
 import { jokes } from '../../assets/jokes';
 
 const initialState = {
@@ -25,7 +27,7 @@ const initialState = {
       active: false,
     }
   },
-  jokesCount: 0,
+  jokesCount: 1,
   jokesIndex: 0,
 };
 
@@ -90,15 +92,15 @@ const gameReducer = (state = initialState, action) => {
           second: {
             ...state.teams.second,
             active: !state.teams.second.active,
-          }
+          },
         }
-      }
+      };
 
     case END_GAME:
       return {
         ...state,
         jokesIndex: state.jokesIndex + 1,
-      }
+      };
 
     default:
       return state
