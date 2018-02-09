@@ -17,13 +17,13 @@ const options = {
             template: fieldTemplate,
             label: 'Équipe n° 1',
             placeholder: 'Entrez le nom de l’équipe n° 1',
-            error: 'Veuillez entrer le nom de l’équipe…'
+            error: 'Veuillez entrer le nom de l’équipe.'
         },
         secondTeam: {
             template: fieldTemplate,
             label: 'Équipe n° 2',
             placeholder: 'Entrez le nom de l’équipe n° 2',
-            error: 'Veuillez entrer le nom de l’équipe…'
+            error: 'Veuillez entrer le nom de l’équipe.'
         },
     },
 };
@@ -79,7 +79,7 @@ export class Player extends React.Component {
                     <RkButton style={globalStyles.bigBottomBtn}
                               rkType='xlarge'
                               onPress={this.handleSubmit}
-                              contentStyle={{color: 'white'}}>Continuer</RkButton>
+                              contentStyle={{color: 'white'}}><Text style={{ fontFamily: 'monospace', fontSize: 20 }}>Continuer</Text></RkButton>
                 </View>
             </View>
         );

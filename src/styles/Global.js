@@ -41,6 +41,7 @@ export const globalStyles = StyleSheet.create({
     textAlign: 'center',
     fontSize: 30,
     paddingTop: 30,
+    fontFamily: 'monospace'
   },
 
   finishContainer: {
@@ -80,8 +81,9 @@ export const globalStyles = StyleSheet.create({
   input: {
     paddingTop: 10,
     paddingBottom: 10,
-    fontSize: 20,
+    fontSize: 15,
     textAlign: 'center',
+    fontFamily: 'monospace'
   },
 
   roundCounterWrapper: {
@@ -107,6 +109,7 @@ export const globalStyles = StyleSheet.create({
 
   jokeText: {
     fontSize: 32,
+    fontFamily: 'monospace'
   },
 
   nextJokeBtn: {

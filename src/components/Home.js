@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Image } from 'react-native';
+import { View, Image, Text } from 'react-native';
 import { RkButton } from 'react-native-ui-kitten';
 import { globalStyles } from '../styles/Global';
 
@@ -10,6 +10,6 @@ export const Home = ({navigation}) => (
     <RkButton style={[globalStyles.bigBottomBtn, globalStyles.homeBtn]}
               contentStyle={globalStyles.boldBtnContent}
               rkType='xlarge'
-              onPress={() => navigation.navigate('Player')}>Démarrer une partie</RkButton>
+              onPress={() => navigation.navigate('Player')}><Text style={{ fontFamily: 'monospace', fontSize: 20 }}>Démarrer une partie</Text></RkButton>
   </View>
 );
