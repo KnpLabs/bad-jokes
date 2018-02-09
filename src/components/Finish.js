@@ -9,9 +9,9 @@ export const Finish = (props) => (
         <View style={globalStyles.finishContainer}>
             <Greeting teams={props.teams} />
         </View>
-        <RkButton style={globalStyles.homeBtn}
+        <RkButton style={globalStyles.newGameBtn}
+                  contentStyle={globalStyles.boldBtnContent}
                   rkType='xlarge'
-                  onPress={props.newGame}
-                  contentStyle={{color: 'white'}}>Nouvelle partie</RkButton>
+                  onPress={props.newGame}>Nouvelle partie</RkButton>
     </View>
 );

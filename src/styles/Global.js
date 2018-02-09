@@ -115,6 +115,11 @@ export const globalStyles = StyleSheet.create({
     marginBottom: 20,
   },
 
+  newGameBtn: {
+    backgroundColor: 'red',
+    margin: 20,
+  },
+
   teamBadges: {
     flex: 0.3,
     flexDirection: 'row',
