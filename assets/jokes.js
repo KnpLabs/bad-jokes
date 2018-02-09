@@ -110,5 +110,6 @@ export const jokes = {
   'c790b211-83c0-4f3d-85ae-2ec00c234e3f': 'Que dit un aveugle qui touche du papier de verre? «Mince, c’est écrit petit.»',
   '5700e33d-4273-4759-8ce1-9b9e459140a3': 'Un homme est arrêté pour un vol de voiture. Après plusieurs années, il est libéré pour bonne conduite.',
   '3037a769-29f1-447c-a2e3-01580aed8207': 'C’est deux grains de sable qui arrivent à la plage. L’un d’eux dit: «Ouahhh, c’est blindé aujourd’hui!»',
-  'ba4aa6f9-624a-451d-af16-13674b16bb08': 'Quelle est la différence entre un thermomètre rectal et oral? Le goût.'
+  'ba4aa6f9-624a-451d-af16-13674b16bb08': 'Quelle est la différence entre un thermomètre rectal et oral? Le goût.',
+  'fee17485-ac22-45b2-b92f-3592d66d5204': 'Tu sais comment on appelle un reportage sur une usine en Inde ? Un reportage hindustriel'
 };
