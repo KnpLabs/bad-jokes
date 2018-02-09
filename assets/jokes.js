@@ -111,5 +111,12 @@ export const jokes = {
   '5700e33d-4273-4759-8ce1-9b9e459140a3': 'Un homme est arrêté pour un vol de voiture. Après plusieurs années, il est libéré pour bonne conduite.',
   '3037a769-29f1-447c-a2e3-01580aed8207': 'C’est deux grains de sable qui arrivent à la plage. L’un d’eux dit: «Ouahhh, c’est blindé aujourd’hui!»',
   'ba4aa6f9-624a-451d-af16-13674b16bb08': 'Quelle est la différence entre un thermomètre rectal et oral? Le goût.',
-  'fee17485-ac22-45b2-b92f-3592d66d5204': 'Tu sais comment on appelle un reportage sur une usine en Inde ? Un reportage hindustriel'
+  'fee17485-ac22-45b2-b92f-3592d66d5204': 'Tu sais comment on appelle un reportage sur une usine en Inde ? Un reportage hindustriel',
+  '3b6bf6a3-7309-4aae-ae80-3e4433ea6fd6': 'Tu as trois poussins en haut d\'une falaise et tu n\'en veux que deux, tu fais quoi ? Ba t\'en pousse un !',
+  '5e4c4634-de65-4412-b614-1dd4ae471b17': 'Que fait un poussin de 35kg ? PIOU-PIOU !',
+  'afb08d5d-3649-4fe2-a873-aad5a0af0069': 'Tu connais la recette de la tarte tatin ? Tu fais une tarte, tu mets au four et puis tatin.',
+  '0285d7d0-557d-4a15-88dd-23cb10b2b142': 'Comment appelle-t-on un combat entre une carotte et petit pois ? Un bon duel.',
+  'd8f221a1-ce44-4742-a81e-89140c8e0798': 'Une femme emmène son chien à la mer, elle pète et le chien meurt. Pourquoi ? Car c\'est un Pékinois.',
+  '1c7d1bee-7cbf-4fe8-aece-73fbac9d104c': 'Quel est le point commun entre un prêtre et un surdoué ? Ils ont tous les deux sauté une classe.',
+  '2ea9ab22-a2fb-425d-8239-1f5ddf0fc23b': 'Le viagra c\'est comme l\'enfer, Satan l\'habite.'
 };
