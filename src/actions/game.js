@@ -18,7 +18,7 @@ export function editTeamsNames(firstTeam, secondTeam) {
 export function nextJoke() {
   return {
     type: NEXT_JOKE,
-  }
+  };
 }
 
 export function newGame() {
