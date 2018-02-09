@@ -15,6 +15,10 @@ export const globalStyles = StyleSheet.create({
     backgroundColor: 'red',
   },
 
+  boldBtnContent: {
+    fontWeight: 'bold',
+  },
+
   bigBottomBtn: {
     backgroundColor: 'red',
     position: 'absolute',
@@ -82,6 +86,16 @@ export const globalStyles = StyleSheet.create({
 
   roundCounterWrapper: {
     flex: 0.05,
+    width: '100%',
+    padding: 10,
+    backgroundColor: 'red',
+  },
+
+  roundCounter: {
+    color: 'white',
+    textAlign: 'center',
+    fontWeight: 'bold',
+    fontSize: 16,
   },
 
   jokeTextWrapper: {
@@ -117,4 +131,10 @@ export const globalStyles = StyleSheet.create({
   },
 
   teamBadgeInnerInactive: {},
+
+  teamScore: {
+    marginTop: 2.5,
+    marginBottom: 10,
+    fontWeight: 'bold',
+  },
 });
