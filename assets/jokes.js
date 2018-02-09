@@ -112,6 +112,7 @@ export const jokes = {
   '3037a769-29f1-447c-a2e3-01580aed8207': 'C’est deux grains de sable qui arrivent à la plage. L’un d’eux dit: «Ouahhh, c’est blindé aujourd’hui!»',
   'ba4aa6f9-624a-451d-af16-13674b16bb08': 'Quelle est la différence entre un thermomètre rectal et oral? Le goût.',
   'fee17485-ac22-45b2-b92f-3592d66d5204': 'Tu sais comment on appelle un reportage sur une usine en Inde ? Un reportage hindustriel',
+  '7b6cd33e-232d-4ea4-88aa-39886c1c280c': 'Quel est le comble pour un sapin de Noël ? Se faire enguirlander parce qu\'il est couvert d\'ampoules',
   '3b6bf6a3-7309-4aae-ae80-3e4433ea6fd6': 'Tu as trois poussins en haut d\'une falaise et tu n\'en veux que deux, tu fais quoi ? Ba t\'en pousse un !',
   '5e4c4634-de65-4412-b614-1dd4ae471b17': 'Que fait un poussin de 35kg ? PIOU-PIOU !',
   'afb08d5d-3649-4fe2-a873-aad5a0af0069': 'Tu connais la recette de la tarte tatin ? Tu fais une tarte, tu mets au four et puis tatin.',

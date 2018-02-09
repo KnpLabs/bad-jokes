@@ -12,7 +12,12 @@ export const Game = (props) => {
       <RkText style={globalStyles.dockedToTop}>Manche {round} / 5</RkText>
       <ScrollView style={globalStyles.jokeTextWrapper}>
         <RkText style={globalStyles.jokeText}>{props.joke.text}</RkText>
-        <RkButton style={globalStyles.nextJokeBtn} onPress={props.nextJoke}>Next »</RkButton>
+        {(
+          props.game.jokesCount >= 10 ?
+          <RkButton style={globalStyles.nextJokeBtn} onPress={props.endOfGame}>End of game</RkButton> :
+          <RkButton style={globalStyles.nextJokeBtn} onPress={props.nextJoke}>Next »</RkButton>
+        )}
+
       </ScrollView>
       <View style={[globalStyles.container, globalStyles.dockedToBottom, globalStyles.teamBadges]}>
         <TeamBadge style={globalStyles.teamBadge} team={props.teams.first} onButtonPress={props.firstTeamScores} />

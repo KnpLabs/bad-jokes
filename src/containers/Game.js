@@ -1,9 +1,15 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import { Game as GameComponent } from '../components/Game';
-import { firstTeamScores, secondTeamScores, nextJoke } from '../actions/game';
+import { firstTeamScores, secondTeamScores, nextJoke, endOfGame } from '../actions/game';
 
 class GameContainer extends React.Component {
+
+  endOfGame() {
+      this.props.endOfGame();
+      this.props.navigation.navigate('Finish');
+  }
+
   render() {
     return <GameComponent
       joke={this.props.joke}
@@ -12,6 +18,7 @@ class GameContainer extends React.Component {
       firstTeamScores={this.props.firstTeamScores}
       secondTeamScores={this.props.secondTeamScores}
       nextJoke={this.props.nextJoke}
+      endOfGame={this.endOfGame.bind(this)}
     />
   }
 };
@@ -26,6 +33,7 @@ const mapDispatchToProps = (dispatch) => ({
   firstTeamScores: () => dispatch(firstTeamScores()),
   secondTeamScores: () => dispatch(secondTeamScores()),
   nextJoke: () => dispatch(nextJoke()),
+  endOfGame: () => dispatch(endOfGame()),
 })
 
 export const Game = connect(mapStateToProps, mapDispatchToProps)(GameContainer);

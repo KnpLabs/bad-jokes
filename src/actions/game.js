@@ -27,7 +27,7 @@ export function newGame() {
   };
 }
 
-export function endGame() {
+export function endOfGame() {
   return {
     type: END_GAME,
   };

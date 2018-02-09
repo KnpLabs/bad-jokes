@@ -36,7 +36,18 @@ const gameReducer = (state = initialState, action) => {
     case NEW_GAME:
       return {
         ...state,
-        teams: initialState.teams,
+        teams: {
+          first: {
+            ...state.teams.first,
+            score: initialState.teams.first.score,
+            active: initialState.teams.first.active,
+          },
+          second: {
+            ...state.teams.second,
+            score: initialState.teams.second.score,
+            active: initialState.teams.second.active,
+          }
+        },
         jokesCount: initialState.jokesCount,
       };
 
@@ -100,6 +111,7 @@ const gameReducer = (state = initialState, action) => {
       return {
         ...state,
         jokesIndex: state.jokesIndex + 1,
+        jokesCount: initialState.jokesCount,
       };
 
     default:
