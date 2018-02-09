@@ -14,7 +14,7 @@ const initialState = {
       uuid: joke[0],
       text: joke[1],
     }
-  }),
+  }).sort(() => Math.random() - 0.5),
   teams: {
     first: {
       name: '',

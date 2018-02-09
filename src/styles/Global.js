@@ -11,16 +11,6 @@ export const globalStyles = StyleSheet.create({
     justifyContent: 'center',
   },
 
-  dockedToTop: {
-    position: 'absolute',
-    top: 0,
-  },
-
-  dockedToBottom: {
-    position: 'absolute',
-    bottom: 0,
-  },
-
   redBtn: {
     backgroundColor: 'red',
   },
@@ -90,7 +80,12 @@ export const globalStyles = StyleSheet.create({
     textAlign: 'center',
   },
 
+  roundCounterWrapper: {
+    flex: 0.05,
+  },
+
   jokeTextWrapper: {
+    flex: 0.65,
     marginTop: 20,
     paddingLeft: 20,
     paddingRight: 20,
@@ -101,17 +96,16 @@ export const globalStyles = StyleSheet.create({
   },
 
   nextJokeBtn: {
-
+    backgroundColor: 'red',
+    marginTop: 20,
+    marginBottom: 20,
   },
 
   teamBadges: {
+    flex: 0.3,
     flexDirection: 'row',
     borderColor: 'gray',
     borderTopWidth: 0.5,
-  },
-
-  teamBadge: {
-    flex: 0.5,
   },
 
   teamBadgeInner: {
