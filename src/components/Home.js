@@ -7,7 +7,7 @@ export const Home = ({navigation}) => (
   <View style={globalStyles.container}>
     <Image style={globalStyles.homeImg}
            source={require('../../assets/img.jpg')} />
-    <RkButton style={globalStyles.homeBtn}
+    <RkButton style={[globalStyles.bigBottomBtn, globalStyles.homeBtn]}
               rkType='xlarge'
               onPress={() => navigation.navigate('Player')}
               contentStyle={{color: 'white'}}>Démarrer une partie</RkButton>

@@ -6,6 +6,11 @@ export const globalStyles = StyleSheet.create({
     backgroundColor: 'white',
   },
 
+  horizontalCenter: {
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+
   dockedToTop: {
     position: 'absolute',
     top: 0,
@@ -16,6 +21,18 @@ export const globalStyles = StyleSheet.create({
     bottom: 0,
   },
 
+  redBtn: {
+    backgroundColor: 'red',
+  },
+
+  bigBottomBtn: {
+    backgroundColor: 'red',
+    position: 'absolute',
+    bottom: 20,
+    left: 20,
+    right: 20,
+  },
+
   homeImg: {
     flex: 0.8,
     width: undefined,
@@ -24,11 +41,6 @@ export const globalStyles = StyleSheet.create({
 
   homeBtn: {
     flex: 0.2,
-    position: 'absolute',
-    backgroundColor: 'red',
-    bottom: 20,
-    left: 20,
-    right: 20,
   },
 
   text: {
@@ -54,7 +66,7 @@ export const globalStyles = StyleSheet.create({
     textAlign: 'center',
     fontSize: 40,
     color: 'red',
-    fontWeight: 'bold', 
+    fontWeight: 'bold',
   },
 
   error: {
@@ -75,15 +87,21 @@ export const globalStyles = StyleSheet.create({
     paddingTop: 10,
     paddingBottom: 10,
     fontSize: 20,
-    textAlign: 'center'
+    textAlign: 'center',
   },
 
-  btn: {
-    backgroundColor: 'red',
-    position: 'absolute',
-    bottom: 20,
-    left: 20,
-    right: 20,
+  jokeTextWrapper: {
+    marginTop: 20,
+    paddingLeft: 20,
+    paddingRight: 20,
+  },
+
+  jokeText: {
+    fontSize: 32,
+  },
+
+  nextJokeBtn: {
+
   },
 
   teamBadges: {
@@ -95,4 +113,14 @@ export const globalStyles = StyleSheet.create({
   teamBadge: {
     flex: 0.5,
   },
+
+  teamBadgeInner: {
+    padding: 10,
+  },
+
+  teamBadgeInnerActive: {
+    backgroundColor: 'rgba(255, 190, 118, 1.0)',
+  },
+
+  teamBadgeInnerInactive: {},
 });
