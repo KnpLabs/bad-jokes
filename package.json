@@ -11,9 +11,6 @@
     "ios": "react-native-scripts ios",
     "test": "node node_modules/jest/bin/jest.js"
   },
-  "jest": {
-    "preset": "jest-expo"
-  },
   "dependencies": {
     "expo": "^25.0.0",
     "react": "16.2.0",
@@ -22,13 +19,9 @@
     "react-native-ui-kitten": "^3.0.0",
     "react-navigation": "^1.0.0",
     "react-redux": "^5.0.6",
-    "react-native-elements": "^0.19.0",
-    "react-native-ui-kitten": "^3.0.0",
     "tcomb-form-native": "^0.6.11"
   },
   "devDependencies": {
-    "react-native-scripts": "1.11.1",
-    "jest-expo": "25.0.0",
-    "react-test-renderer": "16.2.0"
+    "react-native-scripts": "1.11.1"
   }
 }

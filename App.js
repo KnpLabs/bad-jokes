@@ -1,10 +1,10 @@
 import React from 'react';
 import { StackNavigator } from 'react-navigation';
 import { Provider } from 'react-redux';
-import { Game } from './src/containers/Game';
-import { Player } from './src/Player';
-import { Home } from './src/components/Home';
 import store from './src/store';
+import { Home } from './src/components/Home';
+import { Player } from './src/containers/Player';
+import { Game } from './src/containers/Game';
 
 const RootStack = StackNavigator(
   {

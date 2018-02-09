@@ -31,6 +31,41 @@ export const globalStyles = StyleSheet.create({
     right: 20,
   },
 
+  text: {
+    textAlign: 'center',
+    fontSize: 30,
+    paddingTop: 30,
+  },
+
+  error: {
+    color: 'red',
+    fontSize: 15,
+    textAlign: 'center',
+    paddingTop: 10,
+  },
+
+  field: {
+    marginLeft: 20,
+    marginRight: 20,
+    marginTop: 20,
+    marginBottom: 0,
+  },
+
+  input: {
+    paddingTop: 10,
+    paddingBottom: 10,
+    fontSize: 20,
+    textAlign: 'center'
+  },
+
+  btn: {
+    backgroundColor: 'red',
+    position: 'absolute',
+    bottom: 20,
+    left: 20,
+    right: 20,
+  },
+
   teamBadges: {
     flexDirection: 'row',
     borderColor: 'gray',

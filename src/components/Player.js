@@ -1,9 +1,8 @@
 import React from 'react';
-import { connect } from 'react-redux';
-import { View, ScrollView, StyleSheet, Text } from 'react-native';
+import { View, ScrollView, Text } from 'react-native';
 import { RkButton, RkText, RkTextInput } from 'react-native-ui-kitten';
 import t from 'tcomb-form-native';
-import { editTeamsNames } from "./actions/game";
+import { globalStyles } from '../styles/Global';
 
 const Form = t.form.Form;
 
@@ -35,17 +34,17 @@ const options = {
 function fieldTemplate(locals) {
     var error =
         locals.hasError && locals.error ? (
-            <Text accessibilityLiveRegion="polite" style={styles.error}>
+            <Text accessibilityLiveRegion="polite" style={globalStyles.error}>
                 {locals.error}
             </Text>
         ) : null;
 
     return (
         <View>
-            <RkText style={styles.text}>{locals.label}</RkText>
+            <RkText style={globalStyles.text}>{locals.label}</RkText>
             <RkTextInput rkType='bordered'
-                         style={styles.field}
-                         inputStyle={styles.input}
+                         style={globalStyles.field}
+                         inputStyle={globalStyles.input}
                          onChangeText={(value) => locals.onChange(value)}
                          placeholder={locals.placeholder}/>
             {error}
@@ -53,7 +52,7 @@ function fieldTemplate(locals) {
     );
 }
 
-class PlayerContainer extends React.Component {
+export class Player extends React.Component {
     handleSubmit = () => {
         var value = this.refs.form.getValue();
 
@@ -65,14 +64,14 @@ class PlayerContainer extends React.Component {
 
     render() {
         return (
-            <View style={styles.container}>
+            <View style={globalStyles.container}>
                 <ScrollView scrollEnabled={false}>
                     <Form type={Teams}
                           ref="form"
                           options={options} />
                 </ScrollView>
-                <View style={styles.container}>
-                    <RkButton style={styles.button}
+                <View style={globalStyles.container}>
+                    <RkButton style={globalStyles.btn}
                               rkType="xlarge"
                               onPress={this.handleSubmit}
                               contentStyle={{color: 'white'}}>Continuer</RkButton>
@@ -81,50 +80,3 @@ class PlayerContainer extends React.Component {
         );
     };
 }
-
-const styles = StyleSheet.create({
-    container: {
-        flex: 1,
-        backgroundColor: 'white',
-    },
-    text: {
-        textAlign: 'center',
-        fontSize: 30,
-        paddingTop: 30,
-    },
-    error: {
-        color: 'red',
-        fontSize: 15,
-        textAlign: 'center',
-        paddingTop: 10,
-    },
-    field: {
-        marginLeft: 20,
-        marginRight: 20,
-        marginTop: 20,
-        marginBottom: 0,
-    },
-    input: {
-        paddingTop: 10,
-        paddingBottom: 10,
-        fontSize: 20,
-        textAlign: 'center'
-    },
-    button: {
-        backgroundColor: 'red',
-        position: 'absolute',
-        bottom: 20,
-        left: 20,
-        right: 20,
-    },
-});
-
-const mapDispatchToProps = (dispatch) => {
-    return {
-        editTeamsNames: (firstTeam, secondTeam) => {
-            dispatch(editTeamsNames(firstTeam, secondTeam))
-        }
-    }
-};
-
-export const Player = connect(null, mapDispatchToProps)(PlayerContainer);
