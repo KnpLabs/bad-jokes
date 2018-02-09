@@ -122,4 +122,5 @@ export const jokes = {
   '2ea9ab22-a2fb-425d-8239-1f5ddf0fc23b': 'Le viagra c\'est comme l\'enfer, Satan l\'habite.',
   'f688ad60-8080-4f3f-bec6-5ef882931e4e': 'Comment s\'appelle l\'instrument pour tricher en maths ? La calculatriche',
   '0b1e7536-59a5-472d-9b4a-8b056862f445': 'Quel est l\'arbre le plus souple ? Le poirier',
+  '9dde8fc2-b0d8-44a7-8ac4-4d8c25bf7994': 'Comment appelle-t-on un boulanger roux et moche ? Un roux laid dans la farine.',
 };
