@@ -93,7 +93,7 @@ const gameReducer = (state = initialState, action) => {
     case NEXT_JOKE:
       return {
         ...state,
-        jokesIndex: state.jokesIndex + 1,
+        jokesIndex: state.jokes[state.jokesIndex + 1] ? state.jokesIndex + 1 : 0,
         jokesCount: state.jokesCount + 1,
         teams: {
           first: {
