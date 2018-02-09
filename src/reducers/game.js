@@ -2,6 +2,8 @@ import { EDIT_TEAMS_NAMES } from '../actions/game';
 import { NEW_GAME } from '../actions/game';
 import { NEXT_JOKE } from '../actions/game';
 import { END_GAME } from '../actions/game';
+import { FIRST_TEAM_SCORES } from '../actions/game';
+import { SECOND_TEAM_SCORES } from '../actions/game';
 import { jokes } from '../../assets/jokes';
 
 const initialState = {
@@ -29,6 +31,13 @@ const initialState = {
 
 const gameReducer = (state = initialState, action) => {
   switch (action.type) {
+    case NEW_GAME:
+      return {
+        ...state,
+        teams: initialState.teams,
+        jokesCount: initialState.jokesCount,
+      };
+
     case EDIT_TEAMS_NAMES:
       return {
         ...state,
@@ -44,11 +53,28 @@ const gameReducer = (state = initialState, action) => {
         }
       };
 
-    case NEW_GAME:
+    case FIRST_TEAM_SCORES:
       return {
         ...state,
-        teams: initialState.teams,
-        jokesCount: initialState.jokesCount,
+        teams: {
+          ...state.teams,
+          first: {
+            ...state.teams.first,
+            score: state.teams.first.score + 1,
+          },
+        }
+      };
+
+    case SECOND_TEAM_SCORES:
+      return {
+        ...state,
+        teams: {
+          ...state.teams,
+          second: {
+            ...state.teams.second,
+            score: state.teams.second.score + 1,
+          },
+        }
       };
 
     case NEXT_JOKE:
@@ -56,6 +82,16 @@ const gameReducer = (state = initialState, action) => {
         ...state,
         jokesIndex: state.jokesIndex + 1,
         jokesCount: state.jokesCount + 1,
+        teams: {
+          first: {
+            ...state.teams.first,
+            active: !state.teams.first.active,
+          },
+          second: {
+            ...state.teams.second,
+            active: !state.teams.second.active,
+          }
+        }
       }
 
     case END_GAME:
@@ -63,6 +99,7 @@ const gameReducer = (state = initialState, action) => {
         ...state,
         jokesIndex: state.jokesIndex + 1,
       }
+
     default:
       return state
   }
