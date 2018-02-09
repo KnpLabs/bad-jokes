@@ -15,15 +15,15 @@ const options = {
     fields: {
         firstTeam: {
             template: fieldTemplate,
-            label: 'Equipe n°1',
-            placeholder: 'Entrez le nom de l\'équipe n°1',
-            error: 'Veuillez entrer le nom de l\'équipe.'
+            label: 'Équipe n° 1',
+            placeholder: 'Entrez le nom de l’équipe n° 1',
+            error: 'Veuillez entrer le nom de l’équipe…'
         },
         secondTeam: {
             template: fieldTemplate,
-            label: 'Equipe n°2',
-            placeholder: 'Entrez le nom de l\'équipe n°2',
-            error: 'Veuillez entrer le nom de l\'équipe.'
+            label: 'Équipe n° 2',
+            placeholder: 'Entrez le nom de l’équipe n° 2',
+            error: 'Veuillez entrer le nom de l’équipe…'
         },
     },
 };
@@ -34,7 +34,7 @@ const options = {
 function fieldTemplate(locals) {
     var error =
         locals.hasError && locals.error ? (
-            <Text accessibilityLiveRegion="polite" style={globalStyles.error}>
+            <Text accessibilityLiveRegion='polite' style={globalStyles.error}>
                 {locals.error}
             </Text>
         ) : null;
@@ -68,16 +68,16 @@ export class Player extends React.Component {
             <View style={globalStyles.container}>
                 <ScrollView scrollEnabled={false}>
                     <Form type={Teams}
-                          ref="form"
+                          ref='form'
                           value={{
-                              firstTeam: this.props.teams.first.name || '',
-                              secondTeam: this.props.teams.second.name || ''
+                            firstTeam: this.props.teams.first.name || '',
+                            secondTeam: this.props.teams.second.name || '',
                           }}
                           options={options} />
                 </ScrollView>
                 <View style={globalStyles.container}>
-                    <RkButton style={globalStyles.btn}
-                              rkType="xlarge"
+                    <RkButton style={globalStyles.bigBottomBtn}
+                              rkType='xlarge'
                               onPress={this.handleSubmit}
                               contentStyle={{color: 'white'}}>Continuer</RkButton>
                 </View>

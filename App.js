@@ -23,7 +23,7 @@ const RootStack = StackNavigator(
     }
   },
   {
-    initialRouteName: 'Finish',
+    initialRouteName: 'Home',
     headerMode: 'none',
   },
 );
