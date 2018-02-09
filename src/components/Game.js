@@ -9,19 +9,20 @@ export const Game = (props) => {
 
   return (
     <View style={[globalStyles.container, globalStyles.horizontalCenter]}>
-      <RkText style={globalStyles.dockedToTop}>Manche {round} / 5</RkText>
+      <View style={globalStyles.roundCounterWrapper}>
+        <RkText>Manche {round}&nbsp;/&nbsp;5</RkText>
+      </View>
       <ScrollView style={globalStyles.jokeTextWrapper}>
         <RkText style={globalStyles.jokeText}>{props.joke.text}</RkText>
         {(
-          props.game.jokesCount >= 10 ?
-          <RkButton style={globalStyles.nextJokeBtn} onPress={props.endOfGame}>End of game</RkButton> :
-          <RkButton style={globalStyles.nextJokeBtn} onPress={props.nextJoke}>Next »</RkButton>
+          props.game.jokesCount >= 10
+            ? <RkButton rkType='stretch' style={globalStyles.nextJokeBtn} onPress={props.endOfGame}>Fin du jeu</RkButton>
+            : <RkButton rkType='stretch' style={globalStyles.nextJokeBtn} onPress={props.nextJoke}>Suivant »</RkButton>
         )}
-
       </ScrollView>
-      <View style={[globalStyles.container, globalStyles.dockedToBottom, globalStyles.teamBadges]}>
-        <TeamBadge style={globalStyles.teamBadge} team={props.teams.first} onButtonPress={props.firstTeamScores} />
-        <TeamBadge style={globalStyles.teamBadge} team={props.teams.second} onButtonPress={props.secondTeamScores} />
+      <View style={globalStyles.teamBadges}>
+        <TeamBadge team={props.teams.first} onButtonPress={props.firstTeamScores} />
+        <TeamBadge team={props.teams.second} onButtonPress={props.secondTeamScores} />
       </View>
     </View>
   );
