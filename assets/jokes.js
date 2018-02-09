@@ -118,5 +118,7 @@ export const jokes = {
   '0285d7d0-557d-4a15-88dd-23cb10b2b142': 'Comment appelle-t-on un combat entre une carotte et petit pois ? Un bon duel.',
   'd8f221a1-ce44-4742-a81e-89140c8e0798': 'Une femme emmène son chien à la mer, elle pète et le chien meurt. Pourquoi ? Car c\'est un Pékinois.',
   '1c7d1bee-7cbf-4fe8-aece-73fbac9d104c': 'Quel est le point commun entre un prêtre et un surdoué ? Ils ont tous les deux sauté une classe.',
-  '2ea9ab22-a2fb-425d-8239-1f5ddf0fc23b': 'Le viagra c\'est comme l\'enfer, Satan l\'habite.'
+  '2ea9ab22-a2fb-425d-8239-1f5ddf0fc23b': 'Le viagra c\'est comme l\'enfer, Satan l\'habite.',
+  'f688ad60-8080-4f3f-bec6-5ef882931e4e': 'Comment s\'appelle l\'instrument pour tricher en maths ? La calculatriche',
+  '0b1e7536-59a5-472d-9b4a-8b056862f445': 'Quel est l\'arbre le plus souple ? Le poirier',
 };
