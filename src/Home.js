@@ -9,25 +9,27 @@ export const Home = ({navigation}) => (
            source={require('../assets/img.jpg')} />
     <RkButton style={styles.button}
               rkType="xlarge"
-              onPress={() => navigation.navigate('NewGame')}
+              onPress={() => navigation.navigate('Player')}
               contentStyle={{color: 'white'}}>Démarrer une partie</RkButton>
   </View>
 );
 
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: 'white'
-  },
-  image: {
-    flex:1,
-    height: undefined,
-    width: undefined
-  },
-  button: {
-    backgroundColor: 'red',
-    marginLeft: 10,
-    marginBottom: 20,
-    marginRight: 10
-  },
+    container: {
+        flex: 1,
+        backgroundColor: 'white'
+    },
+    image: {
+        flex:0.7,
+        height: undefined,
+        width: undefined
+    },
+    button: {
+        flex:0.3,
+        backgroundColor: 'red',
+        position: 'absolute',
+        bottom: 20,
+        left: 20,
+        right: 20
+    },
 });
