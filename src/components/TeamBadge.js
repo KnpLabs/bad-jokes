@@ -7,8 +7,8 @@ const styleSelector = active => active ? globalStyles.teamBadgeInnerActive : glo
 
 export const TeamBadge = (props) => (
   <View style={[globalStyles.container, globalStyles.horizontalCenter, globalStyles.teamBadgeInner, styleSelector(props.team.active)]}>
-    <RkText rkType='large'>{props.team.name}</RkText>
-    <RkText>Score&nbsp;: {props.team.score}</RkText>
-    <RkButton style={globalStyles.redBtn} onPress={props.onButtonPress}>+ 1</RkButton>
+    <RkText rkType='xxlarge'>{props.team.name}</RkText>
+    <RkText style={globalStyles.teamScore}>Score&nbsp;: {props.team.score}</RkText>
+    <RkButton rkType='small' style={globalStyles.redBtn} contentStyle={globalStyles.boldBtnContent} onPress={props.onButtonPress}>+ 1</RkButton>
   </View>
 );

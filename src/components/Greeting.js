@@ -25,8 +25,8 @@ export const Greeting = (props) => {
     // Same score => equality
     return (
         <View>
-            <RkText style={globalStyles.finishStrong}>Egalité !</RkText>
-            <RkText style={globalStyles.finishText}>Bande de loosers !</RkText>
+            <RkText style={globalStyles.finishStrong}>Égalité&nbsp;!</RkText>
+            <RkText style={globalStyles.finishText}>Bande de losers&nbsp;!</RkText>
         </View>
     );
 };
