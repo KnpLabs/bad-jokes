@@ -37,6 +37,26 @@ export const globalStyles = StyleSheet.create({
     paddingTop: 30,
   },
 
+  finishContainer: {
+    flex: 1,
+    flexDirection: 'column',
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+
+  finishText: {
+    textAlign: 'center',
+    fontSize: 40,
+    paddingTop: 20,
+  },
+
+  finishStrong: {
+    textAlign: 'center',
+    fontSize: 40,
+    color: 'red',
+    fontWeight: 'bold', 
+  },
+
   error: {
     color: 'red',
     fontSize: 15,

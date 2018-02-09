@@ -1,7 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import { Game as GameComponent } from '../components/Game';
-import { rootReducer } from '../reducers';
 
 class GameContainer extends React.Component {
   render() {

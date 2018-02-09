@@ -46,6 +46,7 @@ function fieldTemplate(locals) {
                          style={globalStyles.field}
                          inputStyle={globalStyles.input}
                          onChangeText={(value) => locals.onChange(value)}
+                         value={locals.value}
                          placeholder={locals.placeholder}/>
             {error}
         </View>
@@ -68,6 +69,10 @@ export class Player extends React.Component {
                 <ScrollView scrollEnabled={false}>
                     <Form type={Teams}
                           ref="form"
+                          value={{
+                              firstTeam: this.props.teams.first.name || '',
+                              secondTeam: this.props.teams.second.name || ''
+                          }}
                           options={options} />
                 </ScrollView>
                 <View style={globalStyles.container}>
