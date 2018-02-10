@@ -1,7 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import { Finish as FinishComponent } from '../components/Finish';
-import { newGame } from '../actions/game';
+import { newGame } from '../actions/Game';
 
 class FinishContainer extends React.Component {
     newGame() {

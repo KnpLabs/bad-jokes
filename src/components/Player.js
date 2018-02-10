@@ -79,7 +79,7 @@ export class Player extends React.Component {
                     <RkButton style={globalStyles.bigBottomBtn}
                               rkType='xlarge'
                               onPress={this.handleSubmit}
-                              contentStyle={{color: 'white'}}><Text style={{ fontFamily: 'monospace', fontSize: 20 }}>Continuer</Text></RkButton>
+                              contentStyle={{color: 'white'}}><Text style={{ fontSize: 20 }}>Continuer</Text></RkButton>
                 </View>
             </View>
         );

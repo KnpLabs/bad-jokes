@@ -5,8 +5,8 @@ import {
   END_GAME,
   FIRST_TEAM_SCORES,
   SECOND_TEAM_SCORES
-} from '../actions/game';
-import { jokes } from '../../assets/jokes';
+} from '../actions/Game';
+import { jokes } from '../assets/jokes';
 
 const initialState = {
   jokes: Object.entries(jokes).map((joke) => {
@@ -31,7 +31,7 @@ const initialState = {
   jokesIndex: 0,
 };
 
-const gameReducer = (state = initialState, action) => {
+const GameReducer = (state = initialState, action) => {
   switch (action.type) {
     case NEW_GAME:
       return {
@@ -119,4 +119,4 @@ const gameReducer = (state = initialState, action) => {
   }
 }
 
-export default gameReducer;
+export default GameReducer;

@@ -1,7 +1,7 @@
 import React from 'react';
 import { StackNavigator } from 'react-navigation';
 import { Provider } from 'react-redux';
-import store from './src/store';
+import Store from './src/Store';
 import { Home } from './src/components/Home';
 import { Player } from './src/containers/Player';
 import { Game } from './src/containers/Game';
@@ -29,7 +29,7 @@ const RootStack = StackNavigator(
 );
 
 const App = () => (
-  <Provider store={store}>
+  <Provider store={Store}>
     <RootStack />
   </Provider>
 );

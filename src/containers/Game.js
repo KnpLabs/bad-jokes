@@ -1,7 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import { Game as GameComponent } from '../components/Game';
-import { firstTeamScores, secondTeamScores, nextJoke, endOfGame } from '../actions/game';
+import { firstTeamScores, secondTeamScores, nextJoke, endOfGame } from '../actions/Game';
 
 class GameContainer extends React.Component {
 
