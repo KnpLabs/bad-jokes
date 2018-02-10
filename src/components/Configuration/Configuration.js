@@ -8,7 +8,8 @@ const Form = t.form.Form;
 
 const Teams = t.struct({
   firstTeam: t.String,
-  secondTeam: t.String
+  secondTeam: t.String,
+  rounds: t.Number
 });
 
 const options = {
@@ -24,6 +25,11 @@ const options = {
       label: 'Équipe n° 2',
       placeholder: 'Entrez le nom de l’équipe n° 2',
       error: 'Veuillez entrer le nom de l’équipe.'
+    },
+    rounds: {
+      template: fieldTemplate,
+      label: 'Nombre de manches',
+      error: 'Veuillez entrer le nombre de manches.'
     },
   },
 };
@@ -55,12 +61,12 @@ function fieldTemplate(locals) {
   );
 }
 
-export class Player extends React.Component {
+export class Configuration extends React.Component {
   handleSubmit = () => {
     var value = this.refs.form.getValue();
 
     if (value) {
-      this.props.editTeamsNames(value.firstTeam, value.secondTeam);
+      this.props.editConfiguration(value.firstTeam, value.secondTeam, value.rounds);
       this.props.navigation.navigate('Game');
     }
   };
@@ -75,6 +81,7 @@ export class Player extends React.Component {
             value={{
               firstTeam: this.props.teams.first.name || '',
               secondTeam: this.props.teams.second.name || '',
+              rounds: this.props.jokesNumber / 2 || '5',
             }}
             options={options}
           />
@@ -86,7 +93,7 @@ export class Player extends React.Component {
             onPress={this.handleSubmit}
             contentStyle={{color: 'white'}}
           >
-            <Text style={[globalStyles.boldBtnContent, {fontSize: 20}]}>Continuer</Text>
+            <Text style={[globalStyles.boldBtnContent, {fontSize: 20, fontWeight: 'bold'}]}>Continuer</Text>
           </RkButton>
         </View>
       </View>

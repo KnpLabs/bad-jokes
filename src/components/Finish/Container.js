@@ -6,7 +6,7 @@ import { newGame } from '../../actions/game'
 class FinishContainer extends React.Component {
   newGame() {
     this.props.newGame();
-    this.props.navigation.navigate('Player');
+    this.props.navigation.navigate('Configuration');
   }
 
   render() {

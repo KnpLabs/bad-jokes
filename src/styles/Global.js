@@ -107,6 +107,7 @@ export const globalStyles = StyleSheet.create({
 
   jokeText: {
     fontSize: 24,
+    textAlign: 'justify'
   },
 
   nextJokeBtn: {
@@ -129,6 +130,7 @@ export const globalStyles = StyleSheet.create({
 
   teamBadgeInner: {
     padding: 10,
+    flexDirection: 'column',
   },
 
   teamBadgeInnerActive: {
@@ -137,7 +139,13 @@ export const globalStyles = StyleSheet.create({
 
   teamBadgeInnerInactive: {},
 
+  teamName: {
+    flex: 1,
+    textAlign: 'center',
+  },
+
   teamScore: {
+    flex: 1,
     marginTop: 2.5,
     marginBottom: 10,
     fontWeight: 'bold',
