@@ -12,6 +12,12 @@
     "androidStatusBar": {
       "backgroundColor": "#ffffff"
     },
+    "ios": {
+      "bundleIdentifier": "com.knplabs.dadjokes"
+    },
+    "android": {
+      "package": "com.knplabs.dadjokes"
+    },
     "version": "0.1.0"
   }
 }
