@@ -34,9 +34,15 @@ class GameContainer extends React.Component {
   }
 };
 
+const generateNumberInInterval = (min, max) => {
+  return Math.floor(Math.random() * parseInt(max)) + parseInt(min);
+};
+
 const mapStateToProps = (state) => ({
   joke: state.game.jokes[state.game.jokesIndex],
-  manner: state.game.manners[Math.floor(Math.random() * (parseInt(state.game.manners.length) - 1))],
+  manner: ((generateNumberInInterval(0, 100) < 30)
+    ? state.game.manners[generateNumberInInterval(0, state.game.manners.length)]
+    : ''),
   teams: state.game.teams,
   game: state.game,
 });
