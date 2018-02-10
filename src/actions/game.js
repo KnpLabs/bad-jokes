@@ -1,5 +1,6 @@
 export const EDIT_TEAMS_NAMES = 'EDIT_TEAMS_NAMES';
 export const NEXT_JOKE = 'NEXT_JOKE';
+export const SKIP_JOKE = 'SKIP_JOKE';
 export const NEW_GAME = 'NEW_GAME';
 export const END_GAME = 'END_GAME';
 export const FIRST_TEAM_SCORES = 'FIRST_TEAM_SCORES';
@@ -18,6 +19,12 @@ export function editTeamsNames(firstTeam, secondTeam) {
 export function nextJoke() {
   return {
     type: NEXT_JOKE,
+  };
+}
+
+export function skipJoke() {
+  return {
+    type: SKIP_JOKE,
   };
 }
 
