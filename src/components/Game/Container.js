@@ -22,6 +22,7 @@ class GameContainer extends React.Component {
   render() {
     return <Game
       joke={this.props.joke}
+      manner={this.props.manner}
       teams={this.props.teams}
       game={this.props.game}
       firstTeamScores={this.props.firstTeamScores}
@@ -35,6 +36,7 @@ class GameContainer extends React.Component {
 
 const mapStateToProps = (state) => ({
   joke: state.game.jokes[state.game.jokesIndex],
+  manner: state.game.manners[Math.floor(Math.random() * (parseInt(state.game.manners.length) - 1))],
   teams: state.game.teams,
   game: state.game,
 });

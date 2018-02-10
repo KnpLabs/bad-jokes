@@ -117,12 +117,6 @@ export const globalStyles = StyleSheet.create({
     textAlign: 'justify'
   },
 
-  nextJokeBtn: {
-    backgroundColor: 'red',
-    marginTop: 20,
-    marginBottom: 20,
-  },
-
   newGameBtn: {
     backgroundColor: 'red',
     margin: 20,
@@ -174,9 +168,24 @@ export const globalStyles = StyleSheet.create({
     color: 'red',
   },
 
+
+  nextJokeBtn: {
+    backgroundColor: 'red',
+    marginTop: 20,
+    marginBottom: 20,
+    flex: 0.8,
+  },
+
+  skipWrapper: {
+    flex: 1,
+    flexDirection: 'row'
+  },
+
   skipJokeText: {
+    flex: 0.2,
+    marginTop: 20,
     color: 'blue',
-    textAlign: 'right',
-    textDecorationLine: 'underline',
+    textAlign: 'left',
+    textDecorationLine: 'none',
   },
 });
