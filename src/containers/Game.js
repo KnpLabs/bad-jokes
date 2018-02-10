@@ -6,8 +6,8 @@ import { firstTeamScores, secondTeamScores, nextJoke, endOfGame } from '../actio
 class GameContainer extends React.Component {
 
   endOfGame() {
-      this.props.endOfGame();
-      this.props.navigation.navigate('Finish');
+    this.props.endOfGame();
+    this.props.navigation.navigate('Finish');
   }
 
   render() {

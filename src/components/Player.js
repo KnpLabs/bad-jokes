@@ -7,81 +7,89 @@ import { globalStyles } from '../styles/Global';
 const Form = t.form.Form;
 
 const Teams = t.struct({
-    firstTeam: t.String,
-    secondTeam: t.String
+  firstTeam: t.String,
+  secondTeam: t.String
 });
 
 const options = {
-    fields: {
-        firstTeam: {
-            template: fieldTemplate,
-            label: 'Équipe n° 1',
-            placeholder: 'Entrez le nom de l’équipe n° 1',
-            error: 'Veuillez entrer le nom de l’équipe.'
-        },
-        secondTeam: {
-            template: fieldTemplate,
-            label: 'Équipe n° 2',
-            placeholder: 'Entrez le nom de l’équipe n° 2',
-            error: 'Veuillez entrer le nom de l’équipe.'
-        },
+  fields: {
+    firstTeam: {
+      template: fieldTemplate,
+      label: 'Équipe n° 1',
+      placeholder: 'Entrez le nom de l’équipe n° 1',
+      error: 'Veuillez entrer le nom de l’équipe.'
     },
+    secondTeam: {
+      template: fieldTemplate,
+      label: 'Équipe n° 2',
+      placeholder: 'Entrez le nom de l’équipe n° 2',
+      error: 'Veuillez entrer le nom de l’équipe.'
+    },
+  },
 };
 
 /**
  * Customize rendered fields
  */
 function fieldTemplate(locals) {
-    var error =
-        locals.hasError && locals.error ? (
-            <Text accessibilityLiveRegion='polite' style={globalStyles.error}>
-                {locals.error}
-            </Text>
-        ) : null;
+  var error = locals.hasError && locals.error
+    ? (
+      <Text accessibilityLiveRegion='polite' style={globalStyles.error}>
+          {locals.error}
+      </Text>
+    ) : null;
 
-    return (
-        <View>
-            <RkText style={globalStyles.text}>{locals.label}</RkText>
-            <RkTextInput rkType='bordered'
-                         style={globalStyles.field}
-                         inputStyle={globalStyles.input}
-                         onChangeText={(value) => locals.onChange(value)}
-                         value={locals.value}
-                         placeholder={locals.placeholder}/>
-            {error}
-        </View>
-    );
+  return (
+    <View>
+      <RkText style={globalStyles.text}>{locals.label}</RkText>
+      <RkTextInput
+        rkType='bordered'
+        style={globalStyles.field}
+        inputStyle={globalStyles.input}
+        onChangeText={(value) => locals.onChange(value)}
+        value={locals.value}
+        placeholder={locals.placeholder}
+      />
+      {error}
+    </View>
+  );
 }
 
 export class Player extends React.Component {
-    handleSubmit = () => {
-        var value = this.refs.form.getValue();
+  handleSubmit = () => {
+    var value = this.refs.form.getValue();
 
-        if (value) {
-            this.props.editTeamsNames(value.firstTeam, value.secondTeam);
-            this.props.navigation.navigate('Game');
-        }
-    };
+    if (value) {
+      this.props.editTeamsNames(value.firstTeam, value.secondTeam);
+      this.props.navigation.navigate('Game');
+    }
+  };
 
-    render() {
-        return (
-            <View style={globalStyles.container}>
-                <ScrollView scrollEnabled={false}>
-                    <Form type={Teams}
-                          ref='form'
-                          value={{
-                            firstTeam: this.props.teams.first.name || '',
-                            secondTeam: this.props.teams.second.name || '',
-                          }}
-                          options={options} />
-                </ScrollView>
-                <View style={globalStyles.container}>
-                    <RkButton style={globalStyles.bigBottomBtn}
-                              rkType='xlarge'
-                              onPress={this.handleSubmit}
-                              contentStyle={{color: 'white'}}><Text style={{ fontSize: 20 }}>Continuer</Text></RkButton>
-                </View>
-            </View>
-        );
-    };
+  render() {
+    return (
+      <View style={globalStyles.container}>
+        <ScrollView scrollEnabled={false}>
+          <Form
+            type={Teams}
+            ref='form'
+            value={{
+              firstTeam: this.props.teams.first.name || '',
+              secondTeam: this.props.teams.second.name || '',
+            }}
+            options={options}
+          />
+        </ScrollView>
+        <View style={globalStyles.container}>
+          <RkButton
+            style={globalStyles.bigBottomBtn}
+            rkType='xlarge'
+            onPress={this.handleSubmit}
+            contentStyle={{color: 'white'}}
+          >
+            <Text style={{ fontSize: 20 }}>Continuer</Text>
+          </RkButton>
+        </View>
+      </View>
+    );
+  };
 }

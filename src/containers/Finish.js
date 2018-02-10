@@ -4,22 +4,22 @@ import { Finish as FinishComponent } from '../components/Finish';
 import { newGame } from '../actions/Game';
 
 class FinishContainer extends React.Component {
-    newGame() {
-      this.props.newGame();
-      this.props.navigation.navigate('Player');
-    }
+  newGame() {
+    this.props.newGame();
+    this.props.navigation.navigate('Player');
+  }
 
-    render() {
-        return <FinishComponent teams={this.props.teams} newGame={this.newGame.bind(this)} />
-    }
+  render() {
+    return <FinishComponent teams={this.props.teams} newGame={this.newGame.bind(this)} />
+  }
 };
 
 const mapStateToProps = (state) => ({
-    teams: state.game.teams,
+  teams: state.game.teams,
 });
 
 const mapDispatchToProps = (dispatch) => ({
-    newGame: () => dispatch(newGame()),
+  newGame: () => dispatch(newGame()),
 });
 
 export const Finish = connect(mapStateToProps, mapDispatchToProps)(FinishContainer);
