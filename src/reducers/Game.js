@@ -12,7 +12,7 @@ const initialState = {
   jokes: Object.entries(jokes).map((joke) => ({
       uuid: joke[0],
       text: joke[1],
-  }).sort(() => Math.random() - 0.5),
+  })).sort(() => Math.random() - 0.5),
   teams: {
     first: {
       name: '',
