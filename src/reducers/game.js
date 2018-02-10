@@ -8,13 +8,16 @@ import {
   SKIP_JOKE
 } from '../actions/game';
 import { jokes } from '../assets/jokes';
+import { manners } from '../assets/manners';
 
 const initialState = {
   jokes: Object.entries(jokes).map((joke) => ({
-      uuid: joke[0],
-      text: joke[1]['joke'],
-      manner: joke[1]['manner'],
+    uuid: joke[0],
+    text: joke[1],
   })).sort(() => Math.random() - 0.5),
+  manners: Object.entries(manners).map((manner) => ({
+    text: manner[1],
+  })).sort(() => Math.random()),
   teams: {
     first: {
       name: '',
@@ -113,6 +116,7 @@ export const reducer = (state = initialState, action) => {
       return {
         ...state,
         jokesIndex: state.jokes[state.jokesIndex + 1] ? state.jokesIndex + 1 : 0,
+        mannersIndex: Math.floor(Math.random() * (parseInt(state.manners.length) - 1))
       };
 
     case END_GAME:
