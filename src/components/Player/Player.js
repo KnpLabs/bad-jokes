@@ -86,7 +86,7 @@ export class Player extends React.Component {
             onPress={this.handleSubmit}
             contentStyle={{color: 'white'}}
           >
-            <Text style={{ fontSize: 20 }}>Continuer</Text>
+            <Text style={[globalStyles.boldBtnContent, {fontSize: 20}]}>Continuer</Text>
           </RkButton>
         </View>
       </View>
