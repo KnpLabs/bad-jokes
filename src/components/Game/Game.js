@@ -13,6 +13,7 @@ export const Game = (props) => {
         <RkText style={globalStyles.roundCounter}>Manche {round}&nbsp;/&nbsp;{props.game.jokesNumber / 2}</RkText>
       </View>
       <ScrollView style={globalStyles.jokeTextWrapper}>
+        <RkText style={globalStyles.jokeManner}>{props.joke.manner}</RkText>
         <RkText style={globalStyles.jokeText}>{props.joke.text}</RkText>
         <RkButton rkType='stretch' style={globalStyles.nextJokeBtn} contentStyle={globalStyles.boldBtnContent} onPress={props.nextJoke}>
           <Text style={{ fontSize: 20, color: 'white', fontWeight: 'bold' }}>Suivant »</Text>

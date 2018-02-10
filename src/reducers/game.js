@@ -12,7 +12,8 @@ import { jokes } from '../assets/jokes';
 const initialState = {
   jokes: Object.entries(jokes).map((joke) => ({
       uuid: joke[0],
-      text: joke[1],
+      text: joke[1]['joke'],
+      manner: joke[1]['manner'],
   })).sort(() => Math.random() - 0.5),
   teams: {
     first: {

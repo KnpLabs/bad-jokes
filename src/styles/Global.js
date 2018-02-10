@@ -105,7 +105,14 @@ export const globalStyles = StyleSheet.create({
     paddingRight: 20,
   },
 
+  jokeManner: {
+    fontSize: 18,
+    textAlign: 'justify',
+    fontStyle: 'italic'
+  },
+
   jokeText: {
+    paddingTop: 10,
     fontSize: 24,
     textAlign: 'justify'
   },
