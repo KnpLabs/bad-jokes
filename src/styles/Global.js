@@ -53,7 +53,7 @@ export const globalStyles = StyleSheet.create({
   finishText: {
     textAlign: 'center',
     fontSize: 40,
-    paddingTop: 20,
+    marginTop: 10,
   },
 
   finishStrong: {
@@ -141,6 +141,22 @@ export const globalStyles = StyleSheet.create({
     marginTop: 2.5,
     marginBottom: 10,
     fontWeight: 'bold',
+  },
+
+  scoreViewWrapper: {
+    marginTop: 20,
+    alignItems: 'center',
+  },
+
+  scoreView: {
+    flexDirection: 'row',
+    alignItems: 'center',
+  },
+
+  scoreCount: {
+    fontWeight: 'bold',
+    fontSize: 20,
+    color: 'red',
   },
 
   skipJokeText: {
