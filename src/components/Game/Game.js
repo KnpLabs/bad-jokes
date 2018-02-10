@@ -1,8 +1,8 @@
-import React from 'react';
-import { View, ScrollView } from 'react-native';
-import { RkText, RkButton } from 'react-native-ui-kitten';
-import { TeamBadge } from './TeamBadge';
-import { globalStyles } from '../styles/Global';
+import React from 'react'
+import { View, ScrollView } from 'react-native'
+import { RkText, RkButton } from 'react-native-ui-kitten'
+import { TeamBadge } from '../TeamBadge'
+import { globalStyles } from '../../styles/Global'
 
 export const Game = (props) => {
   let round = Math.floor(props.game.jokesCount / 2) + props.game.jokesCount % 2;

@@ -1,17 +1,16 @@
-import React from 'react';
-import { connect } from 'react-redux';
-import { Game as GameComponent } from '../components/Game';
-import { firstTeamScores, secondTeamScores, nextJoke, endOfGame } from '../actions/Game';
+import React from 'react'
+import { connect } from 'react-redux'
+import { Game } from './Game'
+import { firstTeamScores, secondTeamScores, nextJoke, endOfGame } from '../../actions/Game'
 
 class GameContainer extends React.Component {
-
   endOfGame() {
     this.props.endOfGame();
     this.props.navigation.navigate('Finish');
   }
 
   render() {
-    return <GameComponent
+    return <Game
       joke={this.props.joke}
       teams={this.props.teams}
       game={this.props.game}
@@ -36,4 +35,4 @@ const mapDispatchToProps = (dispatch) => ({
   endOfGame: () => dispatch(endOfGame()),
 })
 
-export const Game = connect(mapStateToProps, mapDispatchToProps)(GameContainer);
+export const Container = connect(mapStateToProps, mapDispatchToProps)(GameContainer);
