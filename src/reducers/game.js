@@ -29,7 +29,7 @@ const initialState = {
   jokesIndex: 0,
 };
 
-const GameReducer = (state = initialState, action) => {
+export const reducer = (state = initialState, action) => {
   switch (action.type) {
     case NEW_GAME:
       return {
@@ -116,5 +116,3 @@ const GameReducer = (state = initialState, action) => {
       return state
   }
 }
-
-export default GameReducer;

@@ -1,11 +1,11 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import { Player as PlayerComponent } from '../components/Player';
-import { editTeamsNames } from '../actions/Game';
+import { Player } from './Player';
+import { editTeamsNames } from '../../actions/Game';
 
 class PlayerContainer extends React.Component {
   render() {
-    return <PlayerComponent
+    return <Player
       navigation={this.props.navigation}
       teams={this.props.teams}
       editTeamsNames={this.props.editTeamsNames}
@@ -25,4 +25,4 @@ const mapDispatchToProps = (dispatch) => {
   };
 };
 
-export const Player = connect(mapStateToProps, mapDispatchToProps)(PlayerContainer);
+export const Container = connect(mapStateToProps, mapDispatchToProps)(PlayerContainer);

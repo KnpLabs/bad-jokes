@@ -2,7 +2,7 @@ import React from 'react';
 import { View, ScrollView, Text } from 'react-native';
 import { RkButton, RkText, RkTextInput } from 'react-native-ui-kitten';
 import t from 'tcomb-form-native';
-import { globalStyles } from '../styles/Global';
+import { globalStyles } from '../../styles/Global';
 
 const Form = t.form.Form;
 
