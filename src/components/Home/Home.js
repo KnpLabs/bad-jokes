@@ -13,7 +13,7 @@ export const Home = ({navigation}) => (
       style={[globalStyles.bigBottomBtn, globalStyles.homeBtn]}
       contentStyle={globalStyles.boldBtnContent}
       rkType='xlarge'
-      onPress={() => navigation.navigate('Player')}
+      onPress={() => navigation.navigate('Configuration')}
     >
       <Text style={{ color: 'white', fontSize: 20 }}>Démarrer une partie</Text>
     </RkButton>

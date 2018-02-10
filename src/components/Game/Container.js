@@ -10,10 +10,13 @@ import {
 } from '../../actions/game';
 
 class GameContainer extends React.Component {
-
-  endOfGame() {
-    this.props.endOfGame();
-    this.props.navigation.navigate('Finish');
+  nextJoke() {
+    if (this.props.game.jokesCount >= this.props.game.jokesNumber) {
+      this.props.endOfGame();
+      this.props.navigation.navigate('Finish');
+    } else {
+      this.props.nextJoke();
+    }
   }
 
   render() {
@@ -23,9 +26,9 @@ class GameContainer extends React.Component {
       game={this.props.game}
       firstTeamScores={this.props.firstTeamScores}
       secondTeamScores={this.props.secondTeamScores}
-      nextJoke={this.props.nextJoke}
+      nextJoke={this.nextJoke.bind(this)}
       skipJoke={this.props.skipJoke}
-      endOfGame={this.endOfGame.bind(this)}
+      navigation={this.props.navigation}
     />
   }
 };

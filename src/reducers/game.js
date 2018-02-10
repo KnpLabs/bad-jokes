@@ -1,5 +1,5 @@
 import {
-  EDIT_TEAMS_NAMES,
+  EDIT_CONFIGURATION,
   NEW_GAME,
   NEXT_JOKE,
   END_GAME,
@@ -26,6 +26,7 @@ const initialState = {
       active: false,
     }
   },
+  jokesNumber: 10,
   jokesCount: 1,
   jokesIndex: 0,
 };
@@ -50,7 +51,7 @@ export const reducer = (state = initialState, action) => {
         jokesCount: initialState.jokesCount,
       };
 
-    case EDIT_TEAMS_NAMES:
+    case EDIT_CONFIGURATION:
       return {
         ...state,
         teams: {
@@ -62,7 +63,8 @@ export const reducer = (state = initialState, action) => {
             ...state.teams.second,
             name: action.payload.secondTeam,
           }
-        }
+        },
+        jokesNumber: action.payload.rounds * 2
       };
 
     case FIRST_TEAM_SCORES:

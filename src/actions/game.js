@@ -1,4 +1,4 @@
-export const EDIT_TEAMS_NAMES = 'EDIT_TEAMS_NAMES';
+export const EDIT_CONFIGURATION = 'EDIT_CONFIGURATION';
 export const NEXT_JOKE = 'NEXT_JOKE';
 export const SKIP_JOKE = 'SKIP_JOKE';
 export const NEW_GAME = 'NEW_GAME';
@@ -6,12 +6,13 @@ export const END_GAME = 'END_GAME';
 export const FIRST_TEAM_SCORES = 'FIRST_TEAM_SCORES';
 export const SECOND_TEAM_SCORES = 'SECOND_TEAM_SCORES';
 
-export function editTeamsNames(firstTeam, secondTeam) {
+export function editConfiguration(firstTeam, secondTeam, rounds) {
   return {
-    type: EDIT_TEAMS_NAMES,
+    type: EDIT_CONFIGURATION,
     payload: {
       firstTeam,
       secondTeam,
+      rounds
     }
   };
 }
