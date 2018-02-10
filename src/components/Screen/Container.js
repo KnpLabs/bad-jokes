@@ -1,7 +1,7 @@
 import { connect } from 'react-redux'
 import { Screen } from './Screen'
 
-const mapStateToProps = ({
+const mapStateToProps = (state) => ({
   screen: state.navigation.screen,
 })
 
