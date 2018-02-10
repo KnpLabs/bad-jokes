@@ -1,7 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import { Player } from './Player';
-import { editTeamsNames } from '../../actions/Game';
+import { editTeamsNames } from '../../actions/game';
 
 class PlayerContainer extends React.Component {
   render() {

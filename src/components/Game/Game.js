@@ -19,6 +19,7 @@ export const Game = (props) => {
             ? <RkButton rkType='stretch' style={globalStyles.nextJokeBtn} contentStyle={globalStyles.boldBtnContent} onPress={props.endOfGame}>Fin du jeu</RkButton>
             : <RkButton rkType='stretch' style={globalStyles.nextJokeBtn} contentStyle={globalStyles.boldBtnContent} onPress={props.nextJoke}>Suivant »</RkButton>
         )}
+        <RkText style={globalStyles.skipJokeText} onPress={props.skipJoke}>Changer de joke</RkText>
       </ScrollView>
       <View style={globalStyles.teamBadges}>
         <TeamBadge team={props.teams.first} onButtonPress={props.firstTeamScores} />

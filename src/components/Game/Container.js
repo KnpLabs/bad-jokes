@@ -1,9 +1,16 @@
-import React from 'react'
-import { connect } from 'react-redux'
-import { Game } from './Game'
-import { firstTeamScores, secondTeamScores, nextJoke, endOfGame } from '../../actions/Game'
+import React from 'react';
+import { connect } from 'react-redux';
+import { Game } from './Game';
+import {
+  firstTeamScores,
+  secondTeamScores,
+  nextJoke,
+  endOfGame,
+  skipJoke
+} from '../../actions/game';
 
 class GameContainer extends React.Component {
+
   endOfGame() {
     this.props.endOfGame();
     this.props.navigation.navigate('Finish');
@@ -17,6 +24,7 @@ class GameContainer extends React.Component {
       firstTeamScores={this.props.firstTeamScores}
       secondTeamScores={this.props.secondTeamScores}
       nextJoke={this.props.nextJoke}
+      skipJoke={this.props.skipJoke}
       endOfGame={this.endOfGame.bind(this)}
     />
   }
@@ -33,6 +41,7 @@ const mapDispatchToProps = (dispatch) => ({
   secondTeamScores: () => dispatch(secondTeamScores()),
   nextJoke: () => dispatch(nextJoke()),
   endOfGame: () => dispatch(endOfGame()),
+  skipJoke: () => dispatch(skipJoke()),
 })
 
 export const Container = connect(mapStateToProps, mapDispatchToProps)(GameContainer);

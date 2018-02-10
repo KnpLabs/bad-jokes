@@ -106,7 +106,7 @@ export const globalStyles = StyleSheet.create({
   },
 
   jokeText: {
-    fontSize: 32,
+    fontSize: 24,
   },
 
   nextJokeBtn: {
@@ -141,5 +141,11 @@ export const globalStyles = StyleSheet.create({
     marginTop: 2.5,
     marginBottom: 10,
     fontWeight: 'bold',
+  },
+
+  skipJokeText: {
+    color: 'blue',
+    textAlign: 'right',
+    textDecorationLine: 'underline',
   },
 });

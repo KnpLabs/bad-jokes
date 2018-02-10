@@ -4,8 +4,9 @@ import {
   NEXT_JOKE,
   END_GAME,
   FIRST_TEAM_SCORES,
-  SECOND_TEAM_SCORES
-} from '../actions/Game';
+  SECOND_TEAM_SCORES,
+  SKIP_JOKE
+} from '../actions/game';
 import { jokes } from '../assets/jokes';
 
 const initialState = {
@@ -103,6 +104,12 @@ export const reducer = (state = initialState, action) => {
             active: !state.teams.second.active,
           },
         }
+      };
+
+    case SKIP_JOKE:
+      return {
+        ...state,
+        jokesIndex: state.jokes[state.jokesIndex + 1] ? state.jokesIndex + 1 : 0,
       };
 
     case END_GAME:
