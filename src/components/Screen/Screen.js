@@ -1,3 +1,9 @@
 import React from 'react'
 
-export const Screen = ({screen, name, component: Component}) => screen === name ? (<Component />) : null
+export const Screen = ({
+  name,
+  component: Component,
+  screen
+}) => null !== screen.match(name)
+  ? <Component />
+  : null

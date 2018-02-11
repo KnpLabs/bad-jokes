@@ -1,19 +1,19 @@
 import React from 'react'
 import { View, Image, Text } from 'react-native'
 import { RkButton } from 'react-native-ui-kitten'
-import { globalStyles } from '../../styles/Global'
+import { globalStyles as styles } from '../../styles/Global'
 
-export const Home = ({navigation}) => (
-  <View style={globalStyles.container}>
+export const Home = ({start}) => (
+  <View style={styles.container}>
     <Image
-      style={globalStyles.homeImg}
+      style={styles.homeImg}
       source={require('../../assets/img/logo.jpg')}
     />
     <RkButton
-      style={[globalStyles.bigBottomBtn, globalStyles.homeBtn]}
-      contentStyle={globalStyles.boldBtnContent}
+      style={[styles.bigBottomBtn, styles.homeBtn]}
+      contentStyle={styles.boldBtnContent}
       rkType='xlarge'
-      onPress={() => navigation.navigate('Configuration')}
+      onPress={start}
     >
       <Text style={{ color: 'white', fontSize: 20 }}>Démarrer une partie</Text>
     </RkButton>
