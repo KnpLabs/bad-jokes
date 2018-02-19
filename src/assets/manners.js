@@ -4,6 +4,8 @@ export const manners = [
   "Avec l'accent québecois.",
   "Avec l'accent suisse.",
   "Avec l'accent belge.",
+  "Avec l'accent espagnol.",
+  "Avec l'accent italien.",
   "A la manière de Johnny Halliday.",
   "A la manière d'Elvis Presley.",
   "A la manière d'une poule.",
@@ -13,7 +15,7 @@ export const manners = [
   "En gueulant.",
   "En se bouchant le nez.",
   "En chuchotant.",
+  "En bégayant",
   "Avec la langue sortie de la bouche.",
   "Avec son poing dans la bouche.",
-  "Comme un Italien.",
 ];
