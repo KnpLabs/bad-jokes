@@ -1,23 +1,21 @@
 import React from 'react';
 import { View } from 'react-native';
 import { RkText } from 'react-native-ui-kitten';
-import { globalStyles } from '../styles/Global';
+import { globalStyles as styles } from '../styles/Global';
 
-export const Greeting = (props) => {
-  const teams = props.teams;
-
+export const Greeting = ({teams}) => {
   if (teams.first.score > teams.second.score) {
     return (
       <View>
-        <RkText style={globalStyles.finishStrong}>{teams.first.name}</RkText>
-        <RkText style={globalStyles.finishText}>a gagné !</RkText>
+        <RkText style={styles.finishStrong}>{teams.first.name}</RkText>
+        <RkText style={styles.finishText}>a gagné !</RkText>
       </View>
     );
   } else if (teams.first.score < teams.second.score) {
     return (
       <View>
-        <RkText style={globalStyles.finishStrong}>{teams.second.name}</RkText>
-        <RkText style={globalStyles.finishText}>a gagné !</RkText>
+        <RkText style={styles.finishStrong}>{teams.second.name}</RkText>
+        <RkText style={styles.finishText}>a gagné !</RkText>
       </View>
     );
   }
@@ -25,8 +23,8 @@ export const Greeting = (props) => {
   // Same score => equality
   return (
     <View>
-      <RkText style={globalStyles.finishStrong}>Égalité&nbsp;!</RkText>
-      <RkText style={globalStyles.finishText}>Bande de losers&nbsp;!</RkText>
+      <RkText style={styles.finishStrong}>Égalité&nbsp;!</RkText>
+      <RkText style={styles.finishText}>Bande de losers&nbsp;!</RkText>
     </View>
   );
 };
