@@ -40,7 +40,7 @@ const generateNumberInInterval = (min, max) => {
 
 const mapStateToProps = (state) => ({
   joke: state.game.jokes[state.game.jokesIndex],
-  manner: ((generateNumberInInterval(0, 100) < 30)
+  manner: ((generateNumberInInterval(0, 100) < 60)
     ? state.game.manners[generateNumberInInterval(0, state.game.manners.length)]
     : ''),
   teams: state.game.teams,
