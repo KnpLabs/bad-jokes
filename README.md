@@ -222,3 +222,4 @@ If this causes problems for you, you may want to try changing your terminal's co
 ##How to add a joke
 For the moment the only way to add a joke is to write it somewhere in the middle of [this file](https://github.com/KnpLabs/bad-jokes/blob/master/assets/jokes.json), respecting the format:
 `"UUID": "Question? Answer.",`
+To generate a UUID, you can open your terminal and type the command `uuidgen`
