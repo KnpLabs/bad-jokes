@@ -217,5 +217,5 @@ export const jokes = {
   '25381cd6-a8f1-4936-9fd8-9c46da2ede53': 'Que dit un italien pour dire au revoir ? Pasta la vista.',
   '9574f6b5-2aa7-48d8-8f80-f17abd9dd245': 'Où va Messi quand il se blesse ? À la pharmessi.',
   '872b211b-9cce-407e-bb9b-5d624193c445': 'Que demande un footballeur à son coiffeur ? La coupe du monde s’il vous plaît.',
-  'd438b059-a31e-4d54-b039-3b29e85518d6': 'Est-ce que quand une vegan tombe de moto, on peut dire qu’elle s’est viandée?',
+  'd438b059-a31e-4d54-b039-3b29e85518d6': 'Est-ce que quand une vegan tombe de moto, on peut dire qu’elle s’est viandée ?',
 };
