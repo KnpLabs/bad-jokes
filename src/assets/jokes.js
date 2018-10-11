@@ -166,7 +166,7 @@ export const jokes = {
   'cce25b14-c65d-47c0-8a8e-bea695ce5af7': 'Qu\'est ce qu\'une carotte dans une flaque d\'eau ? Un bonhomme de neige en été.',
   '9c23a467-65e4-47f6-ade1-4241a41047d6': 'Pourquoi est-ce que les bières sont toujours stressées ? Parce qu’elles ont la pression.',
   '6f65a451-80a0-46e9-ba68-080baac77580': 'Quelle princesse a les lèvres gercées ? Labello bois dormant.',
-  'a12de902-c619-4cc9-b484-ce0bacc6a2fb': 'Pourquoi est ce que les poissons n\'ont plus de maison ? Parce qu\’on les a des truites.',
+  'a12de902-c619-4cc9-b484-ce0bacc6a2fb': 'Pourquoi est ce que les poissons n\'ont plus de maison ? Parce qu’on les a des truites.',
   '49fa0845-5b92-4acb-a01f-ecbe353f548c': 'Pourquoi est ce que le lapin est bleu ? Parce qu’on lapin.',
   'cd0de3a0-8ede-412d-a8bd-4d533b0c868c': 'Pourquoi est ce que Potter est triste ? Parce que personne Harry à sa blague.',
   '80d20bb1-482c-4dd4-843f-5cc737f82912': 'Comment appelle-t-on un combat entre un petit pois et une carotte ? Un bon duel.',
