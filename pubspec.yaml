@@ -1,0 +1,32 @@
+name: dadjokes
+description: An application that generates embarrassing jokes at dinner table.
+publish_to: 'none'
+version: 1.0.1
+
+environment:
+  sdk: ">=2.12.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^1.0.0
+  flutter_launcher_icons: "^0.9.0"
+
+flutter_icons:
+  image_path: assets/img/icon.png
+  android: true
+  ios: true
+
+flutter:
+  assets:
+    - assets/jokes.json
+    - assets/img/logo.jpg
+
+  uses-material-design: true
