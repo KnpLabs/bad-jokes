@@ -219,4 +219,5 @@ export const jokes = {
   '872b211b-9cce-407e-bb9b-5d624193c445': 'Que demande un footballeur à son coiffeur ? La coupe du monde s’il vous plaît.',
   'e30d486f-cb53-464c-9a9a-5489f002b365': 'Que répond un homme quand on lui demande où se trouve le col de l’utérus ? Qu’il ne regarde pas le Tour de France.',
   'd438b059-a31e-4d54-b039-3b29e85518d6': 'Est-ce que quand une vegan tombe de moto, on peut dire qu’elle s’est viandée ?',
+  'a438b059-a31e-4d54-b039-3b29e85518d7': 'Que dit un rouleau de papier toilette déguisé en Dark-Vador? J’essuie ton père !',
 };
