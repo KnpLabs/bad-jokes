@@ -190,7 +190,7 @@ export const jokes = {
   'caf9732b-8b82-45e6-8eb6-b73da08dbd5e': 'Quel est le carburant le plus détendu ? Le kérosène.',
   'a2ac3bec-ca3d-4943-9e66-8a5161503c06': 'Quel est le fast food préféré de Flash ? Quick.',
   '68849c81-74c1-4b59-a98e-3d36e52fdef8': 'Comment reconnaît-on un cannibale ? Il mange des petits Suisses.',
-  '3b5a1341-80e8-4f2e-89a9-bda90c713189': 'Qu’est-ce qui est vert et qui se déplace sous l’eau ? Un chou marin.',
+  '3b5a1341-80e8-4f2e-89a9-bda90c713189': 'Qu’est-ce qui est vert, se déplace sous l’eau et fait buzzzzz ? Un chou marin ruche.',
   '9361d67b-55a2-4f56-ade7-0504a9b0ee6e': 'Quel est le pays le plus cool du monde ? Le Yééémen.',
   '71ac16c5-b888-4ca8-95a8-4b955f512b7b': 'Quel est le super héros qui donne le plus vite l’heure ? Speed heure man.',
   '26041977-0846-44c1-875e-df40908273e5': 'Quel est le fruit préféré des profs d’histoire ? Les dates.',
